@@ -1,0 +1,148 @@
+/* WIREFRAME TESTING */
+
+/* This section will create dashed borders around all elements, uncomment the below code when building layout */
+
+:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+
+/* END WIREFRAME TESTING */
+
+
+/* GLOBAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+body {
+  color: #222;
+  background: thistle;
+  margin: 1vh 1vw;
+  padding: 0 3vw;
+
+  /*Apply Google Font*/
+  font-family: 'Lora', serif;
+
+  /* Full background */
+  /*background: url('../img/unsplash01.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+
+  /* Default Google font stylings for all H tags */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 3vw;
+  font-size: 1.3em;
+}
+
+.header {
+  padding-bottom: 2vh;
+}
+
+h3 {
+  padding-bottom: 2vh;
+}
+ /* Clearfix */
+
+.item {
+  margin-bottom: 3vh;
+
+}
+
+h5 {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-size: 1.5em;
+}
+
+.clearfix {
+content: "";
+display: table;
+clear: both;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Large Devices, Wide Screens */
+
+ @media only screen and (min-width : 800px) {
+   body {
+     background-color: tomato;
+   }
+
+   .header {
+     overflow: auto;
+   }
+
+   h1 {
+     float: left;
+   }
+
+   ul {
+     float: right;
+     margin-right: 10vw;
+   }
+
+   .intro {
+     margin: 1vh 0;
+   }
+
+   .wrapper {
+     float: left;
+   }
+
+   .item {
+    float: right;
+    width: 50%;
+    padding: 1.5vw;
+   }
+
+   img {
+     max-width: 100%;
+   }
+}
+
+ @media only screen and (min-width : 1450px) {
+   body {
+     background-color: whitesmoke;
+   }
+
+   ul {
+    margin-right: 3vw;
+   }
+
+   .intro {
+    margin: 0 10vw;
+   }
+
+   .item {
+     width: 25%;
+   }
+
+ }
